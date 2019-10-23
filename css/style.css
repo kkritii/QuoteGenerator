@@ -1,0 +1,98 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	/* box-sizing: border-box; */
+}
+html {
+	font-size: 62.5%;
+	font-family: "Liu Jian Mao Cao", cursive;
+}
+
+.header {
+	margin: 2.5rem;
+	padding: 10rem;
+	background-image: linear-gradient(to right bottom, #88bdbc9d, #112d3298),
+		url(../img/jonatan.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	/* position: relative; */
+}
+
+.row {
+	width: 114rem;
+	padding: 10rem 0;
+	display: block;
+	height: 27rem;
+	background-image: linear-gradient(
+		105deg,
+		rgba(85, 197, 122, 0.8) 50%,
+		rgba(126, 213, 111, 0.8),
+		#ffffff31 50%
+	);
+	margin: 0 auto;
+	position: relative;
+}
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.col-1-of-2 {
+	float: left;
+}
+.col-1 {
+	width: 52%;
+}
+.col-2 {
+	width: 40%;
+}
+.col-1-of-2:not(:last-child) {
+	margin-right: 5rem;
+}
+
+.header__button:link,
+.header__button:visited {
+	display: inline-block;
+	position: absolute;
+	top: 60%;
+	left: 12%;
+	font-size: 2.5rem;
+	text-decoration: none;
+	padding: 2rem 3rem;
+	border-radius: 10rem;
+	text-transform: uppercase;
+	transition: all 0s ease;
+	box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.5);
+}
+.header__button:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+}
+.header__button:active {
+	transform: translateY(-1px);
+	box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.8);
+}
+.btn--white {
+	background-color: #fff;
+}
+
+.heading-primary {
+	font-family: sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 3.5rem;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	letter-spacing: 4px;
+}
+.quote {
+	margin-top: 5rem;
+	font-family: "Indie Flower", cursive;
+	font-size: 4rem;
+}
+.footer {
+	font-size: 2rem;
+	margin-bottom: 1rem solid #28b485;
+}
